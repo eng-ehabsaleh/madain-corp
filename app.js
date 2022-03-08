@@ -138,13 +138,16 @@ function computer(){
 		gameArr.push(19)
 	}
 
-	if(gameArr.includes(1)&&gameArr.includes(2)&&gameArr.includes(3) || gameArr.includes(1)&&gameArr.includes(5)&&gameArr.includes(9) || gameArr.includes(7)&&gameArr.includes(8)&&gameArr.includes(9) ||gameArr.includes(4)&&gameArr.includes(5)&&gameArr.includes(6) ||gameArr.includes(3)&&gameArr.includes(5)&&gameArr.includes(7)){
+	if(gameArr.includes(1)&&gameArr.includes(2)&&gameArr.includes(3) || gameArr.includes(1)&&gameArr.includes(5)&&gameArr.includes(9) || gameArr.includes(7)&&gameArr.includes(8)&&gameArr.includes(9) ||gameArr.includes(4)&&gameArr.includes(5)&&gameArr.includes(6) ||gameArr.includes(3)&&gameArr.includes(5)&&gameArr.includes(7) ||gameArr.includes(1)&&gameArr.includes(4)&&gameArr.includes(7)||gameArr.includes(2)&&gameArr.includes(5)&&gameArr.includes(8)||gameArr.includes(3)&&gameArr.includes(6)&&gameArr.includes(9)){
 		alert('you won');
 		window.location.reload();
 	}
 
-	else if(gameArr.includes(11)&&gameArr.includes(12)&&gameArr.includes(13) || gameArr.includes(11)&&gameArr.includes(15)&&gameArr.includes(19) || gameArr.includes(17)&&gameArr.includes(18)&&gameArr.includes(19) ||gameArr.includes(14)&&gameArr.includes(15)&&gameArr.includes(16) ||gameArr.includes(13)&&gameArr.includes(15)&&gameArr.includes(17)){
+	else if(gameArr.includes(11)&&gameArr.includes(12)&&gameArr.includes(13) || gameArr.includes(11)&&gameArr.includes(15)&&gameArr.includes(19) || gameArr.includes(17)&&gameArr.includes(18)&&gameArr.includes(19) ||gameArr.includes(14)&&gameArr.includes(15)&&gameArr.includes(16) ||gameArr.includes(13)&&gameArr.includes(15)&&gameArr.includes(17) ||gameArr.includes(11)&&gameArr.includes(14)&&gameArr.includes(17)||gameArr.includes(12)&&gameArr.includes(15)&&gameArr.includes(18)||gameArr.includes(13)&&gameArr.includes(16)&&gameArr.includes(19)){
 		alert('you lost');
 		window.location.reload();
+	}
+	if(gameArr.length == 8){
+		alert('Draw')
 	}
 }
