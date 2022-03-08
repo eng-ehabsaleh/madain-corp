@@ -157,8 +157,10 @@ const main = document.getElementById('main')
 
 const button = document.createElement('button');
 main.appendChild(button)
+
 button.addEventListener('click',handleReset)
-button.textContent = "reset"
+button.textContent = "reset";
+
 function handleReset(){
 	window.location.reload();
 }
